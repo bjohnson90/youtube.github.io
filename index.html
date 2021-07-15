@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Youtube Views - Home</title>
+        <!-- Styling for nav bar-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+  <title>Youtube Views</title>
+    </head>
+    <Body background="img/yt_back.jpg"></Body>
+        <nav class="navbar navbar-dark" style="background-color: #000000;padding-right: 25px;padding-left: 25px;">
+            <div class="row .col-md-1">
+                <a class="navbar-brand" href="index.html">Youtube Views</a>
+            </div>
+            <div class="row .col-md-3 .col-md-offset-2">
+                <!-- <a class="navbar-brand" href="comparison.html">Dashboard</a> -->
+                <!-- <a class="navbar-brand" href="weather_data.html">Dataset</a> -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Visualisations
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="BarChart.html">Category</a>
+                        <a class="dropdown-item" href="humidity.html">Line</a>
+                        <a class="dropdown-item" href="temperature.html">Scatter</a>
+                        <a class="dropdown-item" href="wind.html">Wind</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header style="padding-top: 25px; text-align: center ;">
+            <h1>Youtube Views Analyzed</h1>
+            <h2>Welcome to our finds on Youtube views from US and GB</h2>
+        </header>
+        <article style="background-color:rgb(189, 177, 177);padding-right: 25px;padding-left: 25px;"></articlestyle>
+            <div class= "row">
+                <p><img src= "img/first.jpg" style="float: left;" height="500px" width="700px"><br>
+                    <br><br<p style="font-size:20px">Youtube and online have been a huge part of our everyday life,
+                    so it interesting to compare the data of most view Category and other from US and Great Britain. As these two have very similar background.</p>
+                    <!-- can add more  -->
+
+            </div>
+
+        </article>
+        
+        <section style="background-color:rgb(218, 15, 15);padding-right: 50px;padding-left: 50px;padding-bottom: 10px;padding-top: 10px;">
+            <h3>Visualisations</h3>
+            <div class=row style="justify-content: space-between;">
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="background-color:rgb(218, 120, 120); width: 18rem;">
+                        <img src="img/BarChart.png" class="card-img-top" alt="BarChart Img">
+                        <div class="card-body">
+                            <h5 class="card-title"Category Views</h5>
+                            <p class="card-text">Bar Chart showing views per Category.</p>
+                            <a href="BarChart.html" class="btn btn-primary">Click Me!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="background-color:rgb(218, 120, 120);width: 18rem;">
+                        <img src="img/lat vs Hum.png" class="card-img-top" alt="Humidity Scatter">
+                        <div class="card-body">
+                            <h5 class="card-title">Humidity Scatter</h5>
+                            <p class="card-text">Humidity levels across different latitude lines.</p>
+                            <a href="humidity.html" class="btn btn-primary">View Description</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/lat vs temp.png" class="card-img-top" alt="Cloud Scatter">
+                        <div class="card-body">
+                            <h5 class="card-title">Temperature Scatter</h5>
+                            <p class="card-text">Temperature levels across different latitude lines.</p>
+                            <a href="temperature.html" class="btn btn-primary">View Description</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/lat vs wind.png" class="card-img-top" alt="Cloud Scatter">
+                        <div class="card-body">
+                            <h5 class="card-title">Wind Scatter</h5>
+                            <p class="card-text">Wind speeds across different latitude lines.</p>
+                            <a href="wind.html" class="btn btn-primary">View Description</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+
+</body>
+</html>

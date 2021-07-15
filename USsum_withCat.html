@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Views For Each Category</title>
+        <!-- Styling for nav bar-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+  <title>US Stats</title>
+    </head>
+    <Body background="/img/body_back.png"></Body>
+        <nav class="navbar navbar-dark" style="background-color: #000000;padding-right: 25px;padding-left: 25px;">
+            <div class="row .col-md-1">
+                <a class="navbar-brand" href="../index.html">Youtube Views</a>
+            </div>
+            <div class="row .col-md-3 .col-md-offset-2">
+                <a class="navbar-brand" href="USsum_withCat.html">US Dataset</a>
+                <a class="navbar-brand" href="GBsum_withCat.html">GB Dataset</a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Visualisations
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="BarChart.html">Category</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="wind.html">Wind</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header style="padding-top: 25px; text-align: center ;">
+            <h1 style="color: white;">Youtube Views</h1>
+            <h2 style="color: royalblue;">Category Views</h2>
+        </header>
+        <table class="table table-bordered table-hover table-condensed" style="color: white">
+            <thead><tr><th title="Field #1">FIELD1</th>
+            <th title="Field #2">category_id</th>
+            <th title="Field #3">views</th>
+            <th title="Field #4">likes</th>
+            <th title="Field #5">dislikes</th>
+            <th title="Field #6">category</th>
+            </tr></thead>
+            <tbody><tr>
+            <td align="right">0</td>
+            <td align="right">1</td>
+            <td align="right">578137051</td>
+            <td align="right">14106303</td>
+            <td align="right">554537</td>
+            <td>Film &amp; Animation</td>
+            </tr>
+            <tr>
+            <td align="right">1</td>
+            <td align="right">2</td>
+            <td align="right">58798655</td>
+            <td align="right">602090</td>
+            <td align="right">38078</td>
+            <td>Autos &amp; Vehicles</td>
+            </tr>
+            <tr>
+            <td align="right">2</td>
+            <td align="right">10</td>
+            <td align="right">2926571857</td>
+            <td align="right">122627437</td>
+            <td align="right">3851443</td>
+            <td>Music</td>
+            </tr>
+            <tr>
+            <td align="right">3</td>
+            <td align="right">15</td>
+            <td align="right">80126358</td>
+            <td align="right">2275857</td>
+            <td align="right">53984</td>
+            <td>Pets &amp; Animals</td>
+            </tr>
+            <tr>
+            <td align="right">4</td>
+            <td align="right">17</td>
+            <td align="right">552971061</td>
+            <td align="right">11649385</td>
+            <td align="right">680545</td>
+            <td>Sports</td>
+            </tr>
+            <tr>
+            <td align="right">5</td>
+            <td align="right">19</td>
+            <td align="right">40277751</td>
+            <td align="right">503010</td>
+            <td align="right">27213</td>
+            <td>Travel &amp; Events</td>
+            </tr>
+            <tr>
+            <td align="right">6</td>
+            <td align="right">20</td>
+            <td align="right">190349960</td>
+            <td align="right">6384378</td>
+            <td align="right">554498</td>
+            <td>Gaming</td>
+            </tr>
+            <tr>
+            <td align="right">7</td>
+            <td align="right">22</td>
+            <td align="right">560619203</td>
+            <td align="right">21003105</td>
+            <td align="right">1198337</td>
+            <td>People &amp; Blogs</td>
+            </tr>
+            <tr>
+            <td align="right">8</td>
+            <td align="right">23</td>
+            <td align="right">643597267</td>
+            <td align="right">26909637</td>
+            <td align="right">916801</td>
+            <td>Comedy</td>
+            </tr>
+            <tr>
+            <td align="right">9</td>
+            <td align="right">24</td>
+            <td align="right">2264825121</td>
+            <td align="right">59352485</td>
+            <td align="right">6029415</td>
+            <td>Entertainment</td>
+            </tr>
+            <tr>
+            <td align="right">10</td>
+            <td align="right">25</td>
+            <td align="right">201233985</td>
+            <td align="right">2665669</td>
+            <td align="right">670361</td>
+            <td>News &amp; Politics</td>
+            </tr>
+            <tr>
+            <td align="right">11</td>
+            <td align="right">26</td>
+            <td align="right">421480279</td>
+            <td align="right">18252973</td>
+            <td align="right">557794</td>
+            <td>Howto &amp; Style</td>
+            </tr>
+            <tr>
+            <td align="right">12</td>
+            <td align="right">27</td>
+            <td align="right">129096158</td>
+            <td align="right">4895085</td>
+            <td align="right">167729</td>
+            <td>Education</td>
+            </tr>
+            <tr>
+            <td align="right">13</td>
+            <td align="right">28</td>
+            <td align="right">350161100</td>
+            <td align="right">8943730</td>
+            <td align="right">469776</td>
+            <td>Science &amp; Technology</td>
+            </tr>
+            <tr>
+            <td align="right">14</td>
+            <td align="right">43</td>
+            <td align="right">2968312</td>
+            <td align="right">60738</td>
+            <td align="right">1359</td>
+            <td>Shows</td>
+            </tr>
+            </tbody></table>

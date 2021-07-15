@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Views For Each Category</title>
+        <!-- Styling for nav bar-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/template/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+  <title>Youtube Category</title>
+    </head>
+    <Body background="/img/yt_back.jpg"></Body>
+        <nav class="navbar navbar-dark" style="background-color: #000000;padding-right: 25px;padding-left: 25px;">
+            <div class="row .col-md-1">
+                <a class="navbar-brand" href="index.html">Youtube Views</a>
+            </div>
+            <div class="row .col-md-3 .col-md-offset-2">
+                <a class="navbar-brand" href="USsum_withCat.html">US Dataset</a>
+                <a class="navbar-brand" href="GBsum_withCat.html">GB Dataset</a>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Visualisations
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="BarChart.html">Category</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="temperature.html">Temperature</a>
+                        <a class="dropdown-item" href="wind.html">Wind</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header style="padding-top: 25px; text-align: center ;">
+            <h1>Youtube Views</h1>
+            <h2>Category Views</h2>
+        </header>
+        <article style="background-color:rgb(231, 225, 225);padding-right: 25px;padding-left: 25px;">
+            <div class="row">
+                <p> <script src="https://d3js.org/d3.v7.min.js"></script>
+                    <script src="Bobby_template/BarChart.js"></script>
+                    <canvas id="bar-chart"width = "2200" height= "800"></canvas>
+                    </p>
+            </div>
+        </article>
+        <section style="background-color:rgb(218, 15, 15);padding-right: 50px;padding-left: 50px;padding-bottom: 10px;padding-top: 10px;">
+            <h3>Visualisations</h3>
+            <div class=row style="justify-content: space-between;">
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/BarChart.png" class="card-img-top" alt="BarChart Img">
+                        <div class="card-body">
+                            <h5 class="card-title"Category Views</h5>
+                            <p class="card-text">Bar Chart showing views per Category.</p>
+                            <a href="BarChart.html" class="btn btn-primary">Click Me!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/lat vs Hum.png" class="card-img-top" alt="Humidity Scatter">
+                        <div class="card-body">
+                            <h5 class="card-title">Humidity Scatter</h5>
+                            <p class="card-text">Humidity levels across different latitude lines.</p>
+                            <a href="humidity.html" class="btn btn-primary">View Description</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/lat vs temp.png" class="card-img-top" alt="Cloud Scatter">
+                        <div class="card-body">
+                            <h5 class="card-title">Temperature Scatter</h5>
+                            <p class="card-text">Temperature levels across different latitude lines.</p>
+                            <a href="temperature.html" class="btn btn-primary">View Description</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row .col-md-3" style="padding-right: 10px;padding-left:10px;padding-bottom: 10px;padding-top: 10px;">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/lat vs wind.png" class="card-img-top" alt="Cloud Scatter">
+                        <div class="card-body">
+                            <h5 class="card-title">Wind Scatter</h5>
+                            <p class="card-text">Wind speeds across different latitude lines.</p>
+                            <a href="wind.html" class="btn btn-primary">View Description</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+
+</body>
+</html>
