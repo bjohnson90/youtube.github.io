@@ -37,11 +37,14 @@ function optionChanged(selectID){
   const barDisplay = d3.select("#bar");
   barDisplay.html(""); 
 
+  var x_display = dropdown_data[0].trending_date;
+  var y_display = dropdown_data[0].likes;
+
   const trace = {
-    y: dropdown_data[0].video_id,
-    x: dropdown_data[0].likes,
+    y: x_display,
+    x: y_display,
     type: 'bar',
-   //  orientation: "h",
+    // orientation: "h"
    //  text:  otu_labels,
    //  marker: {
    //     color: 'green',
@@ -51,43 +54,14 @@ function optionChanged(selectID){
    //   }
     },
     layout = {
-    title: 'Top 10 OTUs found per Individual',
-    xaxis: {title: '# of Samples Collected'},
-    yaxis: {title: 'OTU ID'}
+    title: 'Likes by Recorded date',
+    xaxis: {title: 'Date'},
+    yaxis: {title: '# Likes'}
     };
 
     // Plot using Plotly
     Plotly.newPlot('bar', [trace], layout);    
      
-// // BUBBLE CHART
-
-// // Remove Sample value and otuID from individual
-// var sampleValue1 = sample_id[0].sample_values;
-// var otuID= sample_id[0].otu_ids;
-
-// // Define the layout and trace object, edit color and orientation
-// var trace1 = {
-//   x: otuID,
-//   y: sampleValue1,
-//   mode: 'markers',
-//   marker: {
-//     color: 'blue',
-    
-//     size: sampleValue1
-//   }
-// },
-
-// layout1 = {
-//   title: 'Bubble Chart For Each Sample',
-//   xaxis: {title: 'OTU ID'},
-//   yaxis: {title: '# of Samples Collected'},
-//   showlegend: false,
-//   height: 800,
-//   width: 1800
-//   };
-  
-// // Plot using Plotly
-// Plotly.newPlot('bubble', [trace1], layout1);
 
 // GAUGE CHART
 
